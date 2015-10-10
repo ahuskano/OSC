@@ -7,17 +7,27 @@ public class FragmentFactory {
 
     public static final int FRAGMENT_OVERVIEW=1;
     public static final int FRAGMENT_LIST=2;
-    public static final int FRAGMENT_SETTINGS=3;
+    public static final int FRAGMENT_MAP=3;
+
+    public static final int FRAGMENT_DASHBOARD=1;
+    public static final int FRAGMENT_USERS=2;
+    public static final int FRAGMENT_SPACES=3;
+    public static final int FRAGMENT_TAGS=4;
+    public static final int FRAGMENT_SETTINGS=5;
 
     public static Fragment provideFragment(int tag) {
 
         switch (tag) {
-            case FRAGMENT_OVERVIEW:
-                return new FragmentOverview();
-            case FRAGMENT_LIST:
-                return new FragmentList();
+            case FRAGMENT_DASHBOARD:
+                return new FragmentDashboard();
+            case FRAGMENT_SPACES:
+                return new FragmentSpaces();
+            case FRAGMENT_TAGS:
+                return new FragmentTags();
+            case FRAGMENT_USERS:
+                return new FragmentUsers();
             default:
-                return new FragmentOverview();
+                return new FragmentDashboard();
         }
     }
 }

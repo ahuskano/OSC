@@ -8,22 +8,30 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dmacan.lightandroidgcm.GcmObserver;
+import com.dmacan.lightandroidgcm.listener.OnGcmMessageReceivedListener;
+import com.dmacan.lightandroidgcm.listener.OnGcmRegisteredListener;
+
 import co.ahuskano.something.R;
 import co.ahuskano.something.fragments.FragmentFactory;
+import co.ahuskano.something.util.PreferenceManager;
+import co.ahuskano.something.util.gcm.SimpleGcmRegistar;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnGcmRegisteredListener, OnGcmMessageReceivedListener {
 
     private DrawerLayout drawerLayout;
     private View content;
     private TextView title;
     private Toolbar toolbar;
     private NavigationView navigationView;
+    private SimpleGcmRegistar gcmRegistar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         content = findViewById(R.id.content);
         initToolbar();
         setupDrawerLayout();
+        if(PreferenceManager.getGCMkey(getApplicationContext()).equals("default"))
+            setup();
     }
 
     @Override
@@ -87,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
             case FragmentFactory.FRAGMENT_LIST:
                 toolbar.getMenu().clear();
                 break;
+            case FragmentFactory.FRAGMENT_MAP:
+                toolbar.getMenu().clear();
             default:
                 toolbar.getMenu().clear();
         }
@@ -97,6 +109,26 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+
+    @Override
+    public void onGcmMessageReceived(boolean b, Intent intent) {
+        Log.i("test", "Gcm message received");
+        Log.i("test", intent.getStringExtra("message"));
+    }
+
+    @Override
+    public void onGcmRegistered(boolean b, String key) {
+        Log.i("test", "Gcm registered: " + b);
+        Log.i("test", "RegId: " + key);
+        PreferenceManager.setGCMkey(getApplicationContext(),key);
+    }
+
+    private void setup() {
+            this.gcmRegistar = new SimpleGcmRegistar(this);
+            this.gcmRegistar.setOnGcmRegisteredListener(this);
+            this.gcmRegistar.registerInBackground(this.getString(R.string.sender_id));
     }
 
 }

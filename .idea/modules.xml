@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OSC Hackathon.iml" filepath="$PROJECT_DIR$/OSC Hackathon.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lightandroid-gcm/lightandroid-gcm.iml" filepath="$PROJECT_DIR$/lightandroid-gcm/lightandroid-gcm.iml" />
     </modules>
   </component>
 </project>

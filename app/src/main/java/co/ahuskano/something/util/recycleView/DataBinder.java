@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 public abstract class DataBinder <T extends RecyclerView.ViewHolder>{
 
+    public static final int DEMO_BINDER=1;
         public RecycleAdapter dataBindAdapter;
 
         public DataBinder(RecycleAdapter dataBindAdapter) {

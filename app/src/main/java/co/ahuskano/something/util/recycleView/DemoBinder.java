@@ -20,9 +20,9 @@ public class DemoBinder extends DataBinder<DemoBinder.ViewHolder> {
 
     @Override
     public void bindViewHolder(ViewHolder holder, int position) {
-        /*holder.findViews();
-        holder.fillDate((LokacijaListView) dataBindAdapter.getItem(position));
-        */
+        holder.findViews();
+        holder.fillDate((DemoModel) dataBindAdapter.getItem(position));
+
     }
 
     @Override

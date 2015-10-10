@@ -1,5 +1,6 @@
 package co.ahuskano.something.activitys;
 
+
 import co.ahuskano.something.R;
 
 public class SplashActivity extends SplashAbstract {
@@ -17,6 +18,6 @@ public class SplashActivity extends SplashAbstract {
     @Override
     public Class getNextClassActivity() {
 
-        return LogInActivity.class;
+        return MainActivity.class;
     }
 }

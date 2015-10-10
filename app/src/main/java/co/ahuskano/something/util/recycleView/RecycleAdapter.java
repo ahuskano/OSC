@@ -35,12 +35,10 @@ public class RecycleAdapter<T extends BasicModel> extends DataBinderAdapter {
      */
     @Override
     public int getItemViewType(int position) {
-      /*  if (items.get(0) instanceof LokacijaListView)
-            return RepslyDataBinderAdapter.CLIENT_BINDER;
+        if (items.get(0) instanceof DemoModel)
+            return DataBinder.DEMO_BINDER;
         else
             return 0;
-    */
-    return 0;
     }
 
     /*
@@ -49,13 +47,12 @@ public class RecycleAdapter<T extends BasicModel> extends DataBinderAdapter {
      */
     @Override
     public <T extends DataBinder> T getDataBinder(int viewType) {
-        /*switch (viewType) {
-            case DataBinderAdapter.CLIENT_BINDER:
-                return (T) new ClientBinder(this);
+        switch (viewType) {
+            case DataBinder.DEMO_BINDER:
+                return (T) new DemoBinder(this);
             default:
                 return null;
-        }*/
-        return null;
+        }
     }
 
     @Override

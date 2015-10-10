@@ -4,20 +4,34 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_overview"
+            android:id="@+id/nav_dashboard"
             android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
             android:orderInCategory="1"
-            android:title="@string/nav_title_overview" />
+            android:title="@string/nav_title_dashboard" />
 
         <item
-            android:id="@+id/nav_list"
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_perm_identity_black_24dp"
             android:orderInCategory="2"
-            android:title="@string/nav_title_list" />
+            android:title="@string/nav_title_users" />
+
+        <item
+            android:id="@+id/nav_spaces"
+            android:orderInCategory="3"
+            android:icon="@drawable/ic_room_black_24dp"
+            android:title="@string/nav_title_spaces" />
+
+        <item
+            android:id="@+id/nav_tags"
+            android:orderInCategory="4"
+            android:icon="@drawable/ic_toc_black_24dp"
+            android:title="@string/nav_title_tags" />
 
 
         <item
             android:id="@+id/nav_settings"
-            android:orderInCategory="3"
+            android:orderInCategory="5"
             android:icon="@drawable/ic_settings"
             android:title="@string/nav_title_settings" />
 

@@ -3,14 +3,14 @@ package co.ahuskano.something.fragments;
 import android.view.View;
 
 import co.ahuskano.something.R;
-import co.ahuskano.something.fragments.BaseFragment;
-import co.ahuskano.something.fragments.FragmentFactory;
 
+/**
+ * Created by ahuskano on 10.10.2015..
+ */
+public class FragmentSpaces extends BaseFragment {
 
-public class FragmentOverview extends BaseFragment {
-
-    public FragmentOverview() {
-        super(FragmentFactory.FRAGMENT_OVERVIEW);
+    public FragmentSpaces() {
+        super(FragmentFactory.FRAGMENT_SPACES);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class FragmentOverview extends BaseFragment {
 
     @Override
     public int getLayout() {
-        return R.layout.fragment_overview;
+        return R.layout.fragment_spaces;
     }
 
     @Override
