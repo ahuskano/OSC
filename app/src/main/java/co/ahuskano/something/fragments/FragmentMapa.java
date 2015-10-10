@@ -11,17 +11,23 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import co.ahuskano.something.R;
+import co.ahuskano.something.api.BaseResponse;
+import co.ahuskano.something.api.SpacesResponse;
+import co.ahuskano.something.controllers.BaseController;
+import co.ahuskano.something.controllers.SpaceController;
+import co.ahuskano.something.models.Space;
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
 
 /**
  * Created by ahuskano on 10.10.2015..
  */
-public class FragmentMapa extends BaseFragment implements OnMapReadyCallback {
+public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, BaseController.OnDataReadListener{
 
     public FragmentMapa() {
         super(FragmentFactory.FRAGMENT_MAP);
     }
+    private GoogleMap map;
 
     @Override
     public void initViews(View view) {
@@ -44,18 +50,13 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(final GoogleMap googleMap) {
+        map=googleMap;
         SmartLocation.with(getActivity()).location()
                 .oneFix()
                 .start(new OnLocationUpdatedListener() {
                     @Override
                     public void onLocationUpdated(Location location) {
                         if (location != null) {
-                            googleMap.addMarker(
-                                    new MarkerOptions().position(
-                                            new LatLng(
-                                                    Double.valueOf(location.getLatitude()),
-                                                    Double.valueOf(location.getLongitude())))
-                                            .title("Your location"));
                             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
                             dismissDialog();
                         }
@@ -63,5 +64,23 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback {
                     }
                 });
 
+        SpaceController spaces=new SpaceController(getActivity());
+        spaces.setOnDataReadListener(this);
+        spaces.getSpaces();
+    }
+
+    @Override
+    public void onDataReceive(BaseResponse response) {
+        if(map!=null) {
+            SpacesResponse spaces = (SpacesResponse) response;
+            for(Space space:spaces.getData()) {
+                map.addMarker(
+                        new MarkerOptions().position(
+                                new LatLng(
+                                        Double.valueOf(space.getLat()),
+                                        Double.valueOf(space.getLongitude())))
+                                .title(space.getName()));
+            }
+        }
     }
 }

@@ -7,9 +7,71 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd8e7a9e-4cd5-4b41-bcc7-955c1fb33382" name="Default" comment="" />
+    <list default="true" id="bd8e7a9e-4cd5-4b41-bcc7-955c1fb33382" name="Default" comment="Spaces established">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/APIUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/BaseController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/models/BaseModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/BaseResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentTabs.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCApi.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabLayout.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabStrip.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/models/Space.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/SpaceController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/SpacesResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/ViewPagerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tabs.xml" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\appcompat_v7_23_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\cardview_v7_22_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\design_22_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\fab_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\library_3_0_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\lightandroid_gcm_unspecified.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\mediarouter_v7_22_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_ads_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_analytics_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_appindexing_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_appinvite_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_appstate_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_base_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_cast_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_drive_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_fitness_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_games_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_gcm_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_identity_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_location_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_maps_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_nearby_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_panorama_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_plus_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_safetynet_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_wallet_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\play_services_wearable_7_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\recyclerview_v7_22_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\support_annotations_23_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\.idea\libraries\support_v4_23_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\OSC Hackathon\app\src\main\java\co\ahuskano\something\util\recycleView\DemoModel.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\OSC Hackathon\app\src\main\java\co\ahuskano\something\util\recycleView\DemoBinder.java" afterPath="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/SpaceBinder.java" />
+      <change type="MOVED" beforePath="E:\OSC Hackathon\app\src\main\res\layout\demo_binder.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/space_binder.xml" />
+    </list>
     <ignored path="OSC Hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,13 +98,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java">
+      <file leaf-file-name="FragmentList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="56" selection-end-column="27" />
               <folding>
-                <element signature="e#4719#4753#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,8 +114,20 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentMapa.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07024793">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,76 +136,91 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/BaseFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+              <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentSpaces.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java">
+      <file leaf-file-name="FragmentTabs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentTabs.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#736#737#0" expanded="true" />
+                <element signature="e#1385#1588#0" expanded="true" />
+                <element signature="e#1587#1588#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#1823#1824#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentUsers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentUsers.java">
+      <file leaf-file-name="SlidingTabLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabLayout.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <caret line="222" column="13" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#227#228#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#2277#2285#0" expanded="true" />
+                <element signature="e#2454#2455#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
+                <element signature="e#2557#2558#0" expanded="true" />
+                <element signature="e#2596#2597#0" expanded="true" />
+                <element signature="e#8132#8133#0" expanded="true" />
+                <element signature="e#8181#8182#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_users.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_users.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_tags.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tags.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_spaces.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_spaces.xml">
+      <file leaf-file-name="SlidingTabStrip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabStrip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9310346">
-              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+                <element signature="e#5780#5781#0" expanded="true" />
+                <element signature="e#5829#5830#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewPagerAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/ViewPagerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1529#1530#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1709#1710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_tabs.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tabs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6551723">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+              <folding>
+                <element signature="e#222#269#0" expanded="true" />
+              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -139,31 +228,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentDashboard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentDashboard.java">
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding>
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation_drawer.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_drawer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3677686">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-              <folding>
-                <element signature="e#369#398#0" expanded="true" />
-                <element signature="e#588#613#0" expanded="true" />
-                <element signature="e#795#821#0" expanded="true" />
-                <element signature="e#1000#1024#0" expanded="true" />
-                <element signature="e#1202#1230#0" expanded="true" />
-              </folding>
+              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,6 +247,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -854,7 +927,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5777840367366" />
+        <entry key="$PROJECT_DIR$" value="5777857612120" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1020,6 +1093,7 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.0.1/appcompat-v7-23.0.1.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/design/22.2.0/design-22.2.0.aar" />
@@ -1027,6 +1101,7 @@
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/22.2.0/recyclerview-v7-22.2.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.clans/fab/1.6.1/d41b41a77d67a5c9e26c746bc6e46fc9aed3c8bb/fab-1.6.1.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services/7.5.0/play-services-7.5.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.nlopez.smartlocation/library/3.0.11/76c18d72b19332d96ef4aa8fa59c2c2b601803c9/library-3.0.11.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-ads/7.5.0/play-services-ads-7.5.0.aar" />
@@ -1049,6 +1124,7 @@
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-safetynet/7.5.0/play-services-safetynet-7.5.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-wallet/7.5.0/play-services-wallet-7.5.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-wearable/7.5.0/play-services-wearable-7.5.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/mediarouter-v7/22.0.0/mediarouter-v7-22.0.0.aar" />
                           </list>
                         </option>
@@ -1260,22 +1336,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/LogInActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/BaseFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/utils/recyclerview/AdapterItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/BasicModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinderAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoBinder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/demo_binder.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_header.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/gcm/SimpleGcmRegistar.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/gcm/SimpleGcmBroadcastReceiver.java" />
@@ -1296,9 +1359,34 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tags.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentTags.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentUsers.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/navigation_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/BaseController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/BaseResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/SpacesResponse.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/APIUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCApi.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/SpaceController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoBinder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/models/Space.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/SpaceBinder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/space_binder.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/ViewPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabStrip.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/HorizontalScrollView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabLayout.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tabs.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentTabs.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java" />
       </list>
     </option>
   </component>
@@ -1311,7 +1399,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -1351,6 +1439,24 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="OSC Hackathon" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OSC Hackathon" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1438,10 +1544,6 @@
               <option name="myItemId" value="something" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1459,6 +1561,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="something" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1527,7 +1633,7 @@
     <property name="recentsLimit" value="5" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="SH35WLY01234" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
-    <property name="SearchEverywhereHistoryKey" value="naviga&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;Sp&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java&#10;Main&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java&#10;navi&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;mani&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;manife&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;Fragm&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java&#10;toolbar&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/layout/toolbar.xml&#10;colo&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;Spla&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/SplashActivity.java&#10;string&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/strings.xml&#10;manif&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;head&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/layout/drawer_header.xml&#10;colors&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;manifest&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;Fragmen&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java&#10;Fragment&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java&#10;navig&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;Ma&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java&#10;Fra&#9;PSI&#9;JAVA://co.ahuskano.something.fragments.FragmentFactory&#10;color&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;build&#9;FILE&#9;file://E:/OSC Hackathon/app/build.gradle" />
+    <property name="SearchEverywhereHistoryKey" value="FragmentL&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java&#10;FragmentM&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java&#10;FragmentFac&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java&#10;fragment&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/layout/fragment_tabs.xml&#10;Frag&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java&#10;Space&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/models/Space.java&#10;Spac&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/models/Space.java&#10;FragmentF&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java&#10;FragmentList&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java&#10;naviga&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;Sp&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java&#10;Main&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java&#10;navi&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;mani&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;manife&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;Fragm&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java&#10;toolbar&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/layout/toolbar.xml&#10;colo&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;Spla&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/SplashActivity.java&#10;string&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/strings.xml&#10;manif&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;head&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/layout/drawer_header.xml&#10;colors&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;manifest&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/AndroidManifest.xml&#10;Fragmen&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java&#10;Fragment&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java&#10;navig&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/menu/navigation_drawer.xml&#10;Ma&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java&#10;Fra&#9;PSI&#9;JAVA://co.ahuskano.something.fragments.FragmentFactory&#10;color&#9;FILE&#9;file://E:/OSC Hackathon/app/src/main/res/values/colors.xml&#10;build&#9;FILE&#9;file://E:/OSC Hackathon/app/build.gradle" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="FullScreen" value="false" />
@@ -1753,6 +1859,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25340393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1763,7 +1870,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1784,199 +1890,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/BaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="e#369#398#0" expanded="true" />
-            <element signature="e#588#613#0" expanded="true" />
-            <element signature="e#795#821#0" expanded="true" />
-            <element signature="e#1000#1024#0" expanded="true" />
-            <element signature="e#1202#1230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#1028#1046#0" expanded="true" />
-            <element signature="e#1186#1204#0" expanded="true" />
-            <element signature="e#2240#2279#0" expanded="true" />
-            <element signature="e#2390#2407#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding>
-            <element signature="e#172#219#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/LogInActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27868852">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/BasicModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09289618">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04644809">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/app/FragmentHostCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding>
-            <element signature="e#5348#5349#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1961" column="0" selection-start-line="1961" selection-start-column="0" selection-end-line="1961" selection-end-column="0" />
-          <folding>
-            <element signature="e#46968#46969#0" expanded="false" />
-            <element signature="e#46996#46997#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/app/FragmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1208" column="21" selection-start-line="1208" selection-start-column="21" selection-end-line="1208" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DemoBinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinderAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/demo_binder.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.862069">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1991,28 +1909,6 @@
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1398#2269#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/activitys/SplashAbstract.java">
@@ -2045,14 +1941,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/drawer_header.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.275862">
@@ -2069,30 +1957,6 @@
         <state vertical-scroll-proportion="-5.862069">
           <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
-          <folding>
-            <element signature="e#2124#2496#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1034484">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="e#278#325#0" expanded="false" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2169,15 +2033,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#354#355#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_spaces.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9310346">
+        <state vertical-scroll-proportion="0.25222552">
           <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding />
         </state>
@@ -2229,13 +2093,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#227#228#0" expanded="false" />
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#431#432#0" expanded="false" />
+            <element signature="e#476#477#0" expanded="false" />
+            <element signature="e#503#504#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2250,18 +2114,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3715847">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#369#398#0" expanded="true" />
+            <element signature="e#588#613#0" expanded="true" />
+            <element signature="e#795#821#0" expanded="true" />
+            <element signature="e#1000#1024#0" expanded="true" />
+            <element signature="e#1202#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/SpacesResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/BaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#319#320#0" expanded="false" />
+            <element signature="e#349#350#0" expanded="false" />
+            <element signature="e#396#397#0" expanded="false" />
+            <element signature="e#434#435#0" expanded="false" />
+            <element signature="e#472#473#0" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
+            <element signature="e#598#599#0" expanded="false" />
+            <element signature="e#635#636#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#716#717#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#401#402#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/APIUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#675#838#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/BasicModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2107438">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/BaseFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/api/OSCApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1403#1404#0" expanded="false" />
+            <element signature="e#1445#1446#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/models/BaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/controllers/SpaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29752067">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/models/Space.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/AdapterItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/RecycleAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/DataBinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2269,25 +2308,153 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentSpaces.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation_drawer.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/recycleView/SpaceBinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3677686">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding>
-            <element signature="e#369#398#0" expanded="true" />
-            <element signature="e#588#613#0" expanded="true" />
-            <element signature="e#795#821#0" expanded="true" />
-            <element signature="e#1000#1024#0" expanded="true" />
-            <element signature="e#1202#1230#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/space_binder.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6551723">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1709#1710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabStrip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#5780#5781#0" expanded="true" />
+            <element signature="e#5829#5830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tabs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6551723">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#222#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/util/SlidingTabLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="222" column="13" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2277#2285#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
+            <element signature="e#2557#2558#0" expanded="true" />
+            <element signature="e#2596#2597#0" expanded="true" />
+            <element signature="e#8132#8133#0" expanded="true" />
+            <element signature="e#8181#8182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentTabs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+            <element signature="e#1385#1588#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1823#1824#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="56" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/co/ahuskano/something/fragments/FragmentMapa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07024793">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

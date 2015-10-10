@@ -4,8 +4,11 @@ import android.app.Activity;
 
 import java.util.List;
 
+import co.ahuskano.something.models.BaseModel;
+import co.ahuskano.something.models.Space;
 
-public class RecycleAdapter<T extends BasicModel> extends DataBinderAdapter {
+
+public class RecycleAdapter<T extends BaseModel> extends DataBinderAdapter {
 
     private List<T> items;
     private Activity activity;
@@ -35,8 +38,8 @@ public class RecycleAdapter<T extends BasicModel> extends DataBinderAdapter {
      */
     @Override
     public int getItemViewType(int position) {
-        if (items.get(0) instanceof DemoModel)
-            return DataBinder.DEMO_BINDER;
+        if (items.get(0) instanceof Space)
+            return DataBinder.SPACE_BINDER;
         else
             return 0;
     }
@@ -48,8 +51,8 @@ public class RecycleAdapter<T extends BasicModel> extends DataBinderAdapter {
     @Override
     public <T extends DataBinder> T getDataBinder(int viewType) {
         switch (viewType) {
-            case DataBinder.DEMO_BINDER:
-                return (T) new DemoBinder(this);
+            case DataBinder.SPACE_BINDER:
+                return (T) new SpaceBinder(this);
             default:
                 return null;
         }
