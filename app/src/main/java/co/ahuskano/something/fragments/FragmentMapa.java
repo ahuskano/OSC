@@ -7,6 +7,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -14,7 +15,7 @@ import co.ahuskano.something.R;
 import co.ahuskano.something.api.BaseResponse;
 import co.ahuskano.something.api.SpacesResponse;
 import co.ahuskano.something.controllers.BaseController;
-import co.ahuskano.something.controllers.SpaceController;
+import co.ahuskano.something.controllers.SpacesController;
 import co.ahuskano.something.models.Space;
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
@@ -35,7 +36,6 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
         SupportMapFragment mapFragment = new SupportMapFragment();
         getActivity().getSupportFragmentManager().beginTransaction().add(R.id.container, mapFragment).commit();
         mapFragment.getMapAsync(this);
-
     }
 
     @Override
@@ -59,12 +59,18 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
                         if (location != null) {
                             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
                             dismissDialog();
+                            map.addMarker(
+                                    new MarkerOptions().position(
+                                            new LatLng(
+                                                    Double.valueOf(location.getLatitude()),
+                                                    Double.valueOf(location.getLongitude())))
+                                            .title("My location").icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_my_location_smaller)));
                         }
 
                     }
                 });
 
-        SpaceController spaces=new SpaceController(getActivity());
+        SpacesController spaces=new SpacesController(getActivity());
         spaces.setOnDataReadListener(this);
         spaces.getSpaces();
     }
@@ -79,7 +85,7 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
                                 new LatLng(
                                         Double.valueOf(space.getLat()),
                                         Double.valueOf(space.getLongitude())))
-                                .title(space.getName()));
+                                .title(space.getName()).icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_map_smaller)));
             }
         }
     }

@@ -41,21 +41,8 @@ public class Space extends BaseModel{
     @Expose
     private String createdAt;
 
-    public Space(long id, String name, String address, String contact, String description, String lat, String longitude, int approved, String updatedAt, String createdAt) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-        this.contact = contact;
-        this.description = description;
-        this.lat = lat;
-        this.longitude = longitude;
-        this.approved = approved;
-        this.updatedAt = updatedAt;
-        this.createdAt = createdAt;
-    }
-
-    public Space() {
-    }
+    @Expose
+    private Image image;
 
     public long getId() {
         return id;
@@ -135,5 +122,13 @@ public class Space extends BaseModel{
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
     }
 }

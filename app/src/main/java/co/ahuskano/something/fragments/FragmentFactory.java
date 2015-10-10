@@ -22,7 +22,7 @@ public class FragmentFactory {
 
         switch (tag) {
             case FRAGMENT_DASHBOARD:
-                return new FragmentDashboard();
+                return new FragmentTabs();
             case FRAGMENT_SPACES:
                 return new FragmentTabs();
             case FRAGMENT_TAGS:

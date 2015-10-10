@@ -1,6 +1,7 @@
 package co.ahuskano.something.util.recycleView;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -61,9 +62,9 @@ public class SpaceBinder extends DataBinder<SpaceBinder.ViewHolder> {
 
         @Override
         public void fillDate(Space model) {
-            Picasso.with(view.getContext()).load("http://i.imgur.com/DvpvklR.png").into(image);
+            Picasso.with(view.getContext()).load(model.getImage().getUrl()).into(image);
             name.setText(model.getName());
-            description.setText(model.getDescription());
+            description.setText(model.getAddress());
         }
     }
 

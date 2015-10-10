@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.util.Log;
 
 import co.ahuskano.something.api.OSCApi;
-import co.ahuskano.something.api.SpaceResponse;
 import co.ahuskano.something.api.SpacesResponse;
 import co.ahuskano.something.util.APIUtils;
 import retrofit.Callback;
@@ -14,15 +13,15 @@ import retrofit.client.Response;
 /**
  * Created by ahuskano on 10.10.2015..
  */
-public class SpaceController extends OSCController{
+public class SpacesController extends OSCController{
 
-    private Callback<SpaceResponse> callbackSpace = new Callback<SpaceResponse>() {
+    private Callback<SpacesResponse> callbackSpaces = new Callback<SpacesResponse>() {
         @Override
-        public void success(SpaceResponse responseSpace, Response response) {
+        public void success(SpacesResponse responseSpaces, Response response) {
             Log.d("test", "success");
             dismissDialog();
             if (getOnDataReadListener() != null)
-                getOnDataReadListener().onDataReceive(responseSpace);
+                getOnDataReadListener().onDataReceive(responseSpaces);
 
         }
 
@@ -35,11 +34,11 @@ public class SpaceController extends OSCController{
         }
     };
 
-    public SpaceController(Activity activity) {
+    public SpacesController(Activity activity) {
         super(activity);
     }
 
-    public void getSpaces(String id){
-        APIUtils.getRestAdapter(OSCApi.API_LOCATION).create(OSCApi.class).getSpace(id, callbackSpace);
+    public void getSpaces(){
+        APIUtils.getRestAdapter(OSCApi.API_LOCATION).create(OSCApi.class).getSpaces(callbackSpaces);
     }
 }

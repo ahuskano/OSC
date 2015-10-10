@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements OnGcmRegisteredLi
         setupDrawerLayout();
         if(PreferenceManager.getGCMkey(getApplicationContext()).equals("default"))
             setup();
+        getSupportFragmentManager().beginTransaction().replace(R.id.content, FragmentFactory.provideFragment(FragmentFactory.FRAGMENT_DASHBOARD)).commit();
+
     }
 
     @Override

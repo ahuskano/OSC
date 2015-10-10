@@ -30,6 +30,7 @@
         <activity android:name=".activitys.MainActivity"/>
         <activity android:name=".activitys.LogInActivity"/>
         <activity android:name=".activitys.SettingsActivity"/>
+        <activity android:name=".activitys.SpaceDetailActivity"/>
 
         <!-- Register custom receiver -->
         <receiver
