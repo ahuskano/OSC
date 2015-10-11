@@ -11,29 +11,22 @@
             android:title="@string/nav_title_dashboard" />
 
         <item
-            android:id="@+id/nav_users"
-            android:icon="@drawable/ic_perm_identity_black_24dp"
+            android:id="@+id/nav_top"
+            android:icon="@drawable/ic_grade_black_24dp"
             android:orderInCategory="2"
-            android:title="@string/nav_title_users" />
-
-        <item
-            android:id="@+id/nav_spaces"
-            android:orderInCategory="3"
-            android:icon="@drawable/ic_room_black_24dp"
-            android:title="@string/nav_title_spaces" />
-
-        <item
-            android:id="@+id/nav_tags"
-            android:orderInCategory="4"
-            android:icon="@drawable/ic_toc_black_24dp"
-            android:title="@string/nav_title_tags" />
-
+            android:title="@string/nav_title_top" />
 
         <item
             android:id="@+id/nav_settings"
             android:orderInCategory="5"
             android:icon="@drawable/ic_settings"
             android:title="@string/nav_title_settings" />
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:orderInCategory="3"
+            android:title="@string/nav_title_log_out" />
 
     </group>
 </menu>

@@ -42,6 +42,18 @@ public class Space extends BaseModel{
     private String createdAt;
 
     @Expose
+    private int average_wifi_rating;
+
+    @Expose
+    private int average_noise_rating;
+
+    @Expose
+    private int average_price_rating;
+
+    @Expose
+    private int distance;
+
+    @Expose
     private Image image;
 
     public long getId() {
@@ -130,5 +142,37 @@ public class Space extends BaseModel{
 
     public void setImage(Image image) {
         this.image = image;
+    }
+
+    public int getAverage_wifi_rating() {
+        return average_wifi_rating;
+    }
+
+    public void setAverage_wifi_rating(int average_wifi_rating) {
+        this.average_wifi_rating = average_wifi_rating;
+    }
+
+    public int getAverage_noise_rating() {
+        return average_noise_rating;
+    }
+
+    public void setAverage_noise_rating(int average_noise_rating) {
+        this.average_noise_rating = average_noise_rating;
+    }
+
+    public int getAverage_price_rating() {
+        return average_price_rating;
+    }
+
+    public void setAverage_price_rating(int average_price_rating) {
+        this.average_price_rating = average_price_rating;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
     }
 }

@@ -11,36 +11,37 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 /**
- * Created by ahuskano on 10.10.2015..
+ * Created by ahuskano on 11.10.2015..
  */
-public class SpacesController extends OSCController{
+public class TopSpacesController extends OSCController {
 
     private Callback<SpacesResponse> callbackSpaces = new Callback<SpacesResponse>() {
         @Override
         public void success(SpacesResponse responseSpaces, Response response) {
-            Log.d("test", "success");
             dismissDialog();
-            if (getOnDataReadListener() != null)
-                getOnDataReadListener().onDataReceive(responseSpaces);
+            Log.d("test", "success");
+            if (getOnDataReadListener() != null) {
+                Log.d("test", "success if");
 
+                getOnDataReadListener().onDataReceive(responseSpaces);
+            }
         }
 
         @Override
         public void failure(RetrofitError error) {
             dismissDialog();
-            Log.d("test", "failure "+ error.getMessage());
             if (getOnDataErrorListener() != null)
                 getOnDataErrorListener().onDataErrorReceive(error);
         }
     };
 
-    public SpacesController(Activity activity) {
+    public TopSpacesController(Activity activity) {
         super(activity);
     }
 
-
-    public void getSpaces(){
+    public void getSpaces(String lng, String lat){
         showDialog();
-        APIUtils.getRestAdapter(OSCApi.API_LOCATION).create(OSCApi.class).getSpaces(callbackSpaces);
+        APIUtils.getRestAdapter(OSCApi.API_LOCATION).create(OSCApi.class).getTopSpaces(lat,lng, callbackSpaces);
     }
+
 }

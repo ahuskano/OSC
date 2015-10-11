@@ -76,17 +76,21 @@ public class MainActivity extends AppCompatActivity implements OnGcmRegisteredLi
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                if (menuItem.getOrder() != FragmentFactory.FRAGMENT_SETTINGS) {
+                if (menuItem.getOrder() != FragmentFactory.FRAGMENT_SETTINGS && menuItem.getOrder()!=FragmentFactory.LOG_OFF) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.content, FragmentFactory.provideFragment(menuItem.getOrder())).commit();
                     menuItem.setChecked(true);
                     getSupportActionBar().setTitle(menuItem.getTitle());
                     setMenu(menuItem.getOrder());
                     drawerLayout.closeDrawers();
-                } else {
+                } else if(menuItem.getOrder()==FragmentFactory.FRAGMENT_SETTINGS){
                     startActivity(new Intent(MainActivity.this, SettingsActivity.class));
                     setMenu(menuItem.getOrder());
                     drawerLayout.closeDrawers();
-                }                return true;
+                }else if(menuItem.getOrder()==FragmentFactory.LOG_OFF){
+                    startActivity(new Intent(MainActivity.this,LogInActivity.class));
+                    finish();
+                }
+                return true;
             }
         });
     }

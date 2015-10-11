@@ -1,10 +1,17 @@
 package co.ahuskano.something.fragments;
 
 import android.content.Intent;
+import android.location.Location;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,26 +23,33 @@ import co.ahuskano.something.api.BaseResponse;
 import co.ahuskano.something.api.SpacesResponse;
 import co.ahuskano.something.controllers.BaseController;
 import co.ahuskano.something.controllers.SpacesController;
+import co.ahuskano.something.controllers.TopSpacesController;
 import co.ahuskano.something.models.Space;
 import co.ahuskano.something.util.Constants;
 import co.ahuskano.something.util.recycleView.RecycleAdapter;
 import co.ahuskano.something.util.recycleView.RecyclerItemClickListener;
+import io.nlopez.smartlocation.OnLocationUpdatedListener;
+import io.nlopez.smartlocation.SmartLocation;
 import retrofit.RetrofitError;
 
+/**
+ * Created by ahuskano on 10.10.2015..
+ */
+public class FragmentNearMe extends BaseFragment implements BaseController.OnDataReadListener,BaseController.OnDataErrorListener{
 
-public class FragmentList extends BaseFragment implements BaseController.OnDataReadListener, BaseController.OnDataErrorListener {
-
-    private SpacesController spaces;
+    private TopSpacesController spaces;
     private RecyclerView recyclerView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private RecycleAdapter<Space> adapterRecycle;
     private List<Space> data;
-    public FragmentList() {
-        super(FragmentFactory.FRAGMENT_LIST);
+    private Location loc;
+    public FragmentNearMe() {
+        super(FragmentFactory.FRAGMENT_TOP);
     }
 
     @Override
     public void initViews(View view) {
+        showDialog();
         data=new ArrayList<>();
         swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler);
@@ -45,21 +59,20 @@ public class FragmentList extends BaseFragment implements BaseController.OnDataR
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                if (spaces != null)
-                    spaces.getSpaces();
+                if (spaces != null && loc!=null)
+                    spaces.getSpaces(String.valueOf(loc.getLatitude()),String.valueOf(loc.getLongitude()));
             }
         });
 
-        spaces=new SpacesController(getActivity());
+        spaces=new TopSpacesController(getActivity());
         spaces.setOnDataErrorListener(this);
         spaces.setOnDataReadListener(this);
-        spaces.getSpaces();
 
         recyclerView.addOnItemTouchListener(
                 new RecyclerItemClickListener(getActivity().getBaseContext(), new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
-                        Intent intent=new Intent(getActivity(), SpaceDetailActivity.class);
+                        Intent intent = new Intent(getActivity(), SpaceDetailActivity.class);
                         intent.putExtra(Constants.KEY_SPACE_ID, String.valueOf(data.get(position).getId()));
                         intent.putExtra(Constants.KEY_SPACE_NAME, data.get(position).getName());
 
@@ -67,11 +80,25 @@ public class FragmentList extends BaseFragment implements BaseController.OnDataR
                     }
                 })
         );
+
+
+        SmartLocation.with(getActivity()).location()
+                .oneFix()
+                .start(new OnLocationUpdatedListener() {
+                    @Override
+                    public void onLocationUpdated(Location location) {
+                        if (location != null) {
+                            loc=location;
+                            spaces.getSpaces(String.valueOf(location.getLatitude()),String.valueOf(location.getLongitude()));
+                        }
+
+                    }
+                });
     }
 
     @Override
     public int getLayout() {
-        return R.layout.fragment_list;
+        return R.layout.fragment_top;
     }
 
     @Override
@@ -81,7 +108,7 @@ public class FragmentList extends BaseFragment implements BaseController.OnDataR
 
     @Override
     public void onDataErrorReceive(RetrofitError error) {
-
+        dismissDialog();
     }
 
     @Override
@@ -93,5 +120,6 @@ public class FragmentList extends BaseFragment implements BaseController.OnDataR
         adapterRecycle.notifyDataSetChanged();
         if(swipeRefreshLayout.isRefreshing())
             swipeRefreshLayout.setRefreshing(false);
+        dismissDialog();
     }
 }

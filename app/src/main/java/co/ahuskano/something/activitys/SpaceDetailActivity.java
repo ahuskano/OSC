@@ -1,18 +1,32 @@
 package co.ahuskano.something.activitys;
 
+import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.github.clans.fab.FloatingActionButton;
+import com.google.android.gms.maps.model.LatLng;
+import com.squareup.picasso.Picasso;
 
 import co.ahuskano.something.R;
 import co.ahuskano.something.api.BaseResponse;
 import co.ahuskano.something.api.SpaceResponse;
 import co.ahuskano.something.controllers.BaseController;
+import co.ahuskano.something.controllers.CheckInController;
 import co.ahuskano.something.controllers.SpaceController;
+import co.ahuskano.something.models.Space;
 import co.ahuskano.something.util.Constants;
+import co.ahuskano.something.util.PreferenceManager;
 import retrofit.RetrofitError;
 
 /**
@@ -21,7 +35,10 @@ import retrofit.RetrofitError;
 public class SpaceDetailActivity extends AppCompatActivity implements BaseController.OnDataReadListener, BaseController.OnDataErrorListener {
 
     private Toolbar toolbar;
-
+    private ImageView image;
+    private TextView tvAddress,tvDescription,tvContact;
+    private Space space;
+    private FloatingActionButton fab;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -32,7 +49,19 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
         space.setOnDataReadListener(this);
         space.setOnDataErrorListener(this);
         space.getSpaces(getIntent().getStringExtra(Constants.KEY_SPACE_ID));
-
+        image=(ImageView) findViewById(R.id.ivPhoto);
+        tvAddress=(TextView) findViewById(R.id.tvAddress);
+        tvDescription=(TextView) findViewById(R.id.tvDescription);
+        tvContact=(TextView) findViewById(R.id.tvContact);
+        fab=(FloatingActionButton) findViewById(R.id.fabCheckIn);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkIn();
+            }
+        });
+        if(getIntent().getBooleanExtra(Constants.KEY_GCM,false))
+            fab.setVisibility(View.GONE);
     }
 
 
@@ -41,12 +70,18 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
         setSupportActionBar(toolbar);
         final ActionBar actionBar = getSupportActionBar();
 
-        if (actionBar != null) {
+        if (actionBar != null && !getIntent().getBooleanExtra(Constants.KEY_GCM,false)) {
             actionBar.setHomeAsUpIndicator(R.drawable.ic_action_back);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        Log.d("test", "TEST: " + getIntent().getStringExtra(Constants.KEY_SPACE_NAME));
         getSupportActionBar().setTitle(getIntent().getExtras().getString(Constants.KEY_SPACE_NAME));
+        toolbar.getMenu().clear();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        toolbar.inflateMenu(R.menu.menu_map);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -56,6 +91,14 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
             case android.R.id.home:
                 finish();
                 break;
+            case R.id.action_map:
+                Intent intent=new Intent(this, MapActivity.class);
+                intent.putExtra(Constants.KEY_SPACE_NAME,space.getName());
+                intent.putExtra(Constants.KEY_LOCATION_LAT,space.getLat());
+                intent.putExtra(Constants.KEY_LOCATION_LNG,space.getLongitude());
+                intent.putExtra(Constants.KEY_SPACE_ID,String.valueOf(space.getId()));
+                startActivity(intent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -63,11 +106,29 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
     @Override
     public void onDataErrorReceive(RetrofitError error) {
 
+
     }
 
     @Override
     public void onDataReceive(BaseResponse response) {
-        SpaceResponse space=(SpaceResponse) response;
-        Log.d("test","SPACE: "+ space.getData().getName());
+        if(response instanceof SpaceResponse) {
+            SpaceResponse spaceR = (SpaceResponse) response;
+            space = spaceR.getData();
+            Picasso.with(this).load(space.getImage().getUrl()).placeholder(R.drawable.default_image).into(image);
+            tvAddress.setText(space.getAddress());
+            tvDescription.setText(space.getDescription());
+            tvContact.setText(space.getContact());
+            getSupportActionBar().setTitle(space.getName());
+        }else{
+            Snackbar.make(fab, response.getMessages()[0], Snackbar.LENGTH_LONG).show();
+        }
+    }
+
+    private void checkIn(){
+        CheckInController con=new CheckInController(this);
+        con.setOnDataReadListener(this);
+        con.setOnDataErrorListener(this);
+        con.chechIn(String.valueOf(space.getId()), PreferenceManager.getToken(this));
+
     }
 }

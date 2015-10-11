@@ -1,7 +1,6 @@
 package co.ahuskano.something.util.recycleView;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -13,9 +12,12 @@ import co.ahuskano.something.R;
 import co.ahuskano.something.models.Space;
 import co.ahuskano.something.util.AdapterItem;
 
-public class SpaceBinder extends DataBinder<SpaceBinder.ViewHolder> {
+/**
+ * Created by ahuskano on 11.10.2015..
+ */
+public class SpaceNearBinder extends DataBinder<SpaceNearBinder.ViewHolder> {
 
-    public SpaceBinder(RecycleAdapter dataBindAdapter) {
+    public SpaceNearBinder(RecycleAdapter dataBindAdapter) {
         super(dataBindAdapter);
     }
 
@@ -38,35 +40,36 @@ public class SpaceBinder extends DataBinder<SpaceBinder.ViewHolder> {
 
     @Override
     public int provideLayout() {
-        return R.layout.space_binder;
+        return R.layout.space_near_binder;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder implements AdapterItem<Space> {
 
         private ImageView image;
         private View view;
-        private TextView name,description;
+        private TextView name, distance;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            view=itemView;
+            view = itemView;
         }
 
 
         @Override
         public void findViews() {
-            image=(ImageView) view.findViewById(R.id.ivImage);
-            name=(TextView) view.findViewById(R.id.tvName);
-            description=(TextView)view.findViewById(R.id.tvDescription);
+            image = (ImageView) view.findViewById(R.id.ivImage);
+            name = (TextView) view.findViewById(R.id.tvName);
+            distance = (TextView) view.findViewById(R.id.tvDistance);
         }
 
         @Override
         public void fillDate(Space model) {
             Picasso.with(view.getContext()).load(model.getImage().getUrl()).placeholder(R.drawable.default_image).into(image);
             name.setText(model.getName());
-            description.setText(model.getAddress());
+            distance.setText((float)model.getDistance()/1000+"km");
         }
     }
 
 
 }
+

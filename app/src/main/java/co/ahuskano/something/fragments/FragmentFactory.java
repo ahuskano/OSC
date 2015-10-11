@@ -11,6 +11,9 @@ public class FragmentFactory {
 
     public static final int FRAGMENT_DASHBOARD=1;
     public static final int FRAGMENT_USERS=2;
+    public static final int FRAGMENT_TOP=2;
+
+    public static final int LOG_OFF=3;
     public static final int FRAGMENT_SPACES=3;
     public static final int FRAGMENT_TAGS=4;
     public static final int FRAGMENT_SETTINGS=5;
@@ -23,12 +26,10 @@ public class FragmentFactory {
         switch (tag) {
             case FRAGMENT_DASHBOARD:
                 return new FragmentTabs();
-            case FRAGMENT_SPACES:
-                return new FragmentTabs();
+            case FRAGMENT_TOP:
+                return new FragmentNearMe();
             case FRAGMENT_TAGS:
                 return new FragmentTags();
-            case FRAGMENT_USERS:
-                return new FragmentUsers();
             case FRAGMENT_TAB_ONE:
                 return new FragmentList();
             case FRAGMENT_TAB_TWO:

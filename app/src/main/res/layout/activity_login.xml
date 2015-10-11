@@ -33,7 +33,7 @@
                     android:id="@+id/email"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email hint" />
+                    android:hint="Username" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -44,7 +44,7 @@
                     android:id="@+id/password"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password hint" />
+                    android:hint="Password" />
             </android.support.design.widget.TextInputLayout>
 
             <LinearLayout
@@ -55,7 +55,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="remember me" />
+                    android:text="Remember me" />
 
                 <CheckBox
                     android:id="@+id/chckRememberMe"
@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="29dp"
                 android:background="@color/dark_primary"
-                android:text="Login title"
+                android:text="Log In"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>

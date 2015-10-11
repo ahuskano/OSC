@@ -1,6 +1,7 @@
 package co.ahuskano.something.util.recycleView;
 
 import android.app.Activity;
+import android.util.Log;
 
 import java.util.List;
 
@@ -38,9 +39,13 @@ public class RecycleAdapter<T extends BaseModel> extends DataBinderAdapter {
      */
     @Override
     public int getItemViewType(int position) {
-        if (items.get(0) instanceof Space)
-            return DataBinder.SPACE_BINDER;
-        else
+        if (items.get(0) instanceof Space) {
+            Log.d("test", "distance: " + ((Space) items.get(0)).getDistance());
+            if (((Space) items.get(0)).getDistance() == 0)
+                return DataBinder.SPACE_BINDER;
+            else
+                return DataBinder.SPACE_BINDER_NEAR;
+        }else
             return 0;
     }
 
@@ -53,6 +58,8 @@ public class RecycleAdapter<T extends BaseModel> extends DataBinderAdapter {
         switch (viewType) {
             case DataBinder.SPACE_BINDER:
                 return (T) new SpaceBinder(this);
+            case DataBinder.SPACE_BINDER_NEAR:
+                return (T) new SpaceNearBinder(this);
             default:
                 return null;
         }

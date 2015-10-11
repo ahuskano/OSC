@@ -1,5 +1,6 @@
 package co.ahuskano.something.fragments;
 
+import android.content.Intent;
 import android.location.Location;
 import android.view.View;
 
@@ -9,14 +10,17 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import co.ahuskano.something.R;
+import co.ahuskano.something.activitys.SpaceDetailActivity;
 import co.ahuskano.something.api.BaseResponse;
 import co.ahuskano.something.api.SpacesResponse;
 import co.ahuskano.something.controllers.BaseController;
 import co.ahuskano.something.controllers.SpacesController;
 import co.ahuskano.something.models.Space;
+import co.ahuskano.something.util.Constants;
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
 
@@ -57,7 +61,7 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
                     @Override
                     public void onLocationUpdated(Location location) {
                         if (location != null) {
-                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 10));
+                            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(location.getLatitude(), location.getLongitude()), 12));
                             dismissDialog();
                             map.addMarker(
                                     new MarkerOptions().position(
@@ -73,6 +77,18 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
         SpacesController spaces=new SpacesController(getActivity());
         spaces.setOnDataReadListener(this);
         spaces.getSpaces();
+        googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+
+            @Override
+            public void onInfoWindowClick(Marker arg0) {
+                if(arg0.getSnippet()!=null) {
+                    Intent intent = new Intent(getActivity(), SpaceDetailActivity.class);
+                    intent.putExtra(Constants.KEY_SPACE_ID, arg0.getSnippet().split("#")[0]);
+                    intent.putExtra(Constants.KEY_SPACE_NAME, arg0.getSnippet().split("#")[1]);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override
@@ -85,7 +101,7 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
                                 new LatLng(
                                         Double.valueOf(space.getLat()),
                                         Double.valueOf(space.getLongitude())))
-                                .title(space.getName()).icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_map_smaller)));
+                                .title(space.getName()).snippet(space.getId()+"#"+space.getName()).icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_map_smaller)));
             }
         }
     }
