@@ -56,6 +56,9 @@ public class Space extends BaseModel{
     @Expose
     private Image image;
 
+    @Expose
+    private Review[] reviews;
+
     public long getId() {
         return id;
     }
@@ -174,5 +177,13 @@ public class Space extends BaseModel{
 
     public void setDistance(int distance) {
         this.distance = distance;
+    }
+
+    public Review[] getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(Review[] reviews) {
+        this.reviews = reviews;
     }
 }

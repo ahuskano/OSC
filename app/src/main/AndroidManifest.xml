@@ -18,6 +18,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+
             android:name=".activitys.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -27,12 +29,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activitys.MainActivity"/>
-        <activity android:name=".activitys.LogInActivity"/>
-        <activity android:name=".activitys.SettingsActivity"/>
-        <activity android:name=".activitys.SpaceDetailActivity"/>
-        <activity android:name=".activitys.MapActivity"/>
-
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.MainActivity"/>
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.LogInActivity"/>
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.SettingsActivity"/>
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.SpaceDetailActivity"/>
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.MapActivity"/>
+        <activity             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".activitys.ReviewsActivity"/>
         <!-- Register custom receiver -->
         <receiver
             android:name=".util.gcm.SimpleGcmBroadcastReceiver"

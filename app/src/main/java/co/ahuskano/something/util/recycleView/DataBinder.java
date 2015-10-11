@@ -9,6 +9,7 @@ public abstract class DataBinder <T extends RecyclerView.ViewHolder>{
 
         public static final int SPACE_BINDER =1;
     public static final int SPACE_BINDER_NEAR =2;
+    public static final int REVIEW_BINDER =3;
 
     public RecycleAdapter dataBindAdapter;
 

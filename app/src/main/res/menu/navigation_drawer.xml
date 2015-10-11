@@ -17,12 +17,6 @@
             android:title="@string/nav_title_top" />
 
         <item
-            android:id="@+id/nav_settings"
-            android:orderInCategory="5"
-            android:icon="@drawable/ic_settings"
-            android:title="@string/nav_title_settings" />
-
-        <item
             android:id="@+id/nav_log_out"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
             android:orderInCategory="3"

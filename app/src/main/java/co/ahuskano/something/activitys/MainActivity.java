@@ -1,6 +1,8 @@
 package co.ahuskano.something.activitys;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +14,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.dmacan.lightandroidgcm.GcmObserver;
@@ -43,7 +47,11 @@ public class MainActivity extends AppCompatActivity implements OnGcmRegisteredLi
         if(PreferenceManager.getGCMkey(getApplicationContext()).equals("default"))
             setup();
         getSupportFragmentManager().beginTransaction().replace(R.id.content, FragmentFactory.provideFragment(FragmentFactory.FRAGMENT_DASHBOARD)).commit();
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.parseColor("#704F87"));
+        }
     }
 
     @Override

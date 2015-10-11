@@ -1,5 +1,7 @@
 package co.ahuskano.something.util;
 
+import co.ahuskano.something.models.Review;
+
 /**
  * Created by ahuskano on 10.10.2015..
  */
@@ -11,4 +13,5 @@ public class Constants {
     public static String KEY_LOCATION_LAT="key_location_lat";
     public static String KEY_GCM="key_GCM";
 
+    public static Review[] reviews;
 }

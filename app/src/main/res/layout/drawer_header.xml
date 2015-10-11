@@ -6,18 +6,10 @@
     android:background="@color/light_primary"
     android:paddingTop="5dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="5dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
-
+    <ImageView
+        android:padding="10dp"
+        android:src="@drawable/ourspace_white"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

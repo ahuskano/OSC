@@ -96,13 +96,17 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback, Ba
         if(map!=null) {
             SpacesResponse spaces = (SpacesResponse) response;
             for(Space space:spaces.getData()) {
-                map.addMarker(
-                        new MarkerOptions().position(
-                                new LatLng(
-                                        Double.valueOf(space.getLat()),
-                                        Double.valueOf(space.getLongitude())))
-                                .title(space.getName()).snippet(space.getId()+"#"+space.getName()).icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_map_smaller)));
-            }
+                try {
+                    map.addMarker(
+                            new MarkerOptions().position(
+                                    new LatLng(
+                                            Double.valueOf(space.getLat()),
+                                            Double.valueOf(space.getLongitude())))
+                                    .title(space.getName()).snippet(space.getId() + "#" + space.getName()).icon(BitmapDescriptorFactory.fromResource(R.drawable.pin_map_smaller)));
+                }catch (Exception e){
+
+                }
+                }
         }
     }
 }

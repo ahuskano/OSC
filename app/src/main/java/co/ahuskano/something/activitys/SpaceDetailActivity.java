@@ -1,7 +1,9 @@
 package co.ahuskano.something.activitys;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
@@ -11,6 +13,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,7 +49,7 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
         super.onCreate(savedInstanceState);
         setContentView(R.layout.space_detail_activity);
         initToolbar();
-        SpaceController space=new SpaceController(this);
+        final SpaceController space=new SpaceController(this);
         space.setOnDataReadListener(this);
         space.setOnDataErrorListener(this);
         space.getSpaces(getIntent().getStringExtra(Constants.KEY_SPACE_ID));
@@ -62,6 +66,17 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
         });
         if(getIntent().getBooleanExtra(Constants.KEY_GCM,false))
             fab.setVisibility(View.GONE);
+        findViewById(R.id.tvReview).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SpaceDetailActivity.this,ReviewsActivity.class));
+            }
+        });
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.parseColor("#704F87"));
+        }
     }
 
 
@@ -112,12 +127,38 @@ public class SpaceDetailActivity extends AppCompatActivity implements BaseContro
     @Override
     public void onDataReceive(BaseResponse response) {
         if(response instanceof SpaceResponse) {
+
             SpaceResponse spaceR = (SpaceResponse) response;
             space = spaceR.getData();
+            Constants.reviews=space.getReviews();
             Picasso.with(this).load(space.getImage().getUrl()).placeholder(R.drawable.default_image).into(image);
             tvAddress.setText(space.getAddress());
             tvDescription.setText(space.getDescription());
             tvContact.setText(space.getContact());
+            if(space.getAverage_noise_rating()<30){
+                ((ImageView)findViewById(R.id.icVolume)).setImageResource(R.drawable.ic_volume_up_white_24dp_red);
+            }else if(space.getAverage_noise_rating()<70){
+                ((ImageView)findViewById(R.id.icVolume)).setImageResource(R.drawable.ic_volume_up_white_24dp_orange);
+
+            }else{
+                ((ImageView)findViewById(R.id.icVolume)).setImageResource(R.drawable.ic_volume_up_white_24dp_green);
+            }
+            if(space.getAverage_wifi_rating()<30){
+                ((ImageView)findViewById(R.id.icWifi)).setImageResource(R.drawable.ic_settings_input_antenna_white_24dp_red);
+            }else if(space.getAverage_wifi_rating()<70){
+                ((ImageView)findViewById(R.id.icWifi)).setImageResource(R.drawable.ic_settings_input_antenna_white_24dp_orange);
+
+            }else{
+                ((ImageView)findViewById(R.id.icWifi)).setImageResource(R.drawable.ic_settings_input_antenna_white_24dp_green);
+            }
+            if(space.getAverage_price_rating()<30){
+                ((ImageView)findViewById(R.id.icPrice)).setImageResource(R.drawable.ic_loyalty_white_24dp_red);
+            }else if(space.getAverage_price_rating() <70){
+                ((ImageView)findViewById(R.id.icPrice)).setImageResource(R.drawable.ic_loyalty_white_24dp_orange);
+
+            }else{
+                ((ImageView)findViewById(R.id.icPrice)).setImageResource(R.drawable.ic_loyalty_white_24dp_green);
+            }
             getSupportActionBar().setTitle(space.getName());
         }else{
             Snackbar.make(fab, response.getMessages()[0], Snackbar.LENGTH_LONG).show();

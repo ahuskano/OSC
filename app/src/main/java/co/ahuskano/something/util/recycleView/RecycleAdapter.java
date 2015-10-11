@@ -6,6 +6,7 @@ import android.util.Log;
 import java.util.List;
 
 import co.ahuskano.something.models.BaseModel;
+import co.ahuskano.something.models.Review;
 import co.ahuskano.something.models.Space;
 
 
@@ -45,7 +46,9 @@ public class RecycleAdapter<T extends BaseModel> extends DataBinderAdapter {
                 return DataBinder.SPACE_BINDER;
             else
                 return DataBinder.SPACE_BINDER_NEAR;
-        }else
+        }else if(items.get(0) instanceof Review){
+            return DataBinder.REVIEW_BINDER;
+        }
             return 0;
     }
 
@@ -60,6 +63,8 @@ public class RecycleAdapter<T extends BaseModel> extends DataBinderAdapter {
                 return (T) new SpaceBinder(this);
             case DataBinder.SPACE_BINDER_NEAR:
                 return (T) new SpaceNearBinder(this);
+            case DataBinder.REVIEW_BINDER:
+                return (T) new ReviewBinder(this);
             default:
                 return null;
         }
